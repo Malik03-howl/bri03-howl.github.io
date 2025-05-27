@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIPANDAI BRI Unit Gombong Barat</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset dan font */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
+        background-color: #f3f4f6;
+        color: #333;
+      }
+      header {
+        background-color: #0051ba; /* biru BRI */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        background: #003b8e;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 12px 0;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 7px 18px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+      nav a:hover {
+        background-color: #ffa500; /* oranye BRI */
+        color: #003b8e;
+        font-weight: 700;
+      }
+      .hero {
+        background: url("https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=1350&q=80")
+          no-repeat center center/cover;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.8rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 6px #000;
+        text-align: center;
+        padding: 0 20px;
+      }
+      .content {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      h2.section-title {
+        text-align: center;
+        margin-bottom: 35px;
+        color: #0051ba;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+      }
+      .product-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        text-align: center;
+      }
+      .product-card:hover {
+        transform: translateY(-6px);
+      }
+      .product-icon {
+        font-size: 48px;
+        color: #0051ba;
+        margin-bottom: 15px;
+      }
+      .product-title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+        color: #003b8e;
+      }
+      .product-desc {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+      /* FAQ Section */
+      .faq {
+        max-width: 900px;
+        margin: 50px auto;
+      }
+      .faq-item {
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 18px 22px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+      .faq-question {
+        font-weight: 600;
+        color: #0051ba;
+      }
+      .faq-answer {
+        margin-top: 10px;
+        display: none;
+        color: #444;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+      /* Contact Section */
+      #contact p {
+        text-align: center;
+        color: #555;
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      #contact a {
+        color: #0051ba;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      #contact a:hover {
+        text-decoration: underline;
+      }
+      iframe {
+        border-radius: 12px;
+        width: 100%;
+        height: 300px;
+        margin-top: 15px;
+        border: none;
+      }
+      footer {
+        background-color: #003b8e;
+        color: white;
+        text-align: center;
+        padding: 18px 0;
+        margin-top: 50px;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 600px) {
+        .hero {
+          font-size: 1.6rem;
+          height: 220px;
+        }
+        nav {
+          gap: 15px;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>SIPANDAI BRI Unit Gombong Barat</header>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#products">Produk & Layanan</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <section class="hero" id="home">
+      Solusi Keuangan Terpercaya di Wilayah Gombong untuk Semua Kebutuhan Anda
+    </section>
+
+    <section class="content" id="products">
+      <h2 class="section-title">Produk & Layanan BRI</h2>
+       <div class="products">
+  <div class="product-card">
+    <div class="product-icon">🏦</div>
+    <div class="product-title">Tabungan BRI</div>
+    <details>
+      <summary>Baca Selengkapnya tentang Tabungan BRI</summary>
+      <div class="product-desc">
+                    <p>
+                        KPR BRI menawarkan berbagai pilihan pinjaman untuk mewujudkan impian kepemilikan atau renovasi rumah Anda, baik itu rumah baru, bekas, apartemen, ruko, hingga perbaikan bangunan yang sudah ada.
+                    </p>
+
+                    <h4>🏠 1. KPR Biasa (Non-Subsidi)</h4>
+                    <p>
+                        Jenis ini cocok untuk Bapak/Ibu yang ingin membeli rumah baru maupun rumah second (bekas). Bisa juga digunakan untuk beli apartemen atau ruko.
+                    </p>
+                    <h5>Keunggulannya:</h5>
+                    <ul>
+                        <li class="kpr-plafon">Plafon pinjaman besar, disesuaikan dengan nilai rumah dan kemampuan bayar nasabah</li>
+                        <li class="kpr-tenor">Tenor angsuran panjang, bisa sampai 20 tahun</li>
+                        <li class="kpr-bunga">Bunga kompetitif dan proses pengajuan relatif cepat</li>
+                        <li class="kpr-proses">Bisa digunakan untuk pembelian rumah dari developer maupun perorangan</li>
+                    </ul>
+                    <p>
+                        <span style="font-weight: bold; color: #4a4a4a;">📌 Cocok untuk</span> nasabah dengan penghasilan tetap dan ingin punya rumah pribadi atau investasi properti.
+                    </p>
+
+                    <h4>🏠 2. KPR Subsidi (FLPP)</h4>
+                    <p>
+                        Jenis ini adalah program kerja sama antara pemerintah dan BRI untuk membantu masyarakat berpenghasilan rendah (MBR) agar bisa punya rumah sendiri.
+                    </p>
+                    <h5>Keunggulannya:</h5>
+                    <ul>
+                        <li class="kpr-bunga">Bunga tetap hanya 5% selama masa angsuran</li>
+                        <li class="kpr-plafon">Cicilan ringan, mulai dari sekitar Rp1 jutaan per bulan, tergantung wilayah</li>
+                        <li class="kpr-tenor">Tenor angsuran hingga 20 tahun</li>
+                        <li class="kpr-bebas">Bebas premi asuransi & PPN</li>
+                        <li class="kpr-proses">Proses cepat dan syarat lebih mudah</li>
+                    </ul>
+                    <p>
+                        <span style="font-weight: bold; color: #4a4a4a;">📌 Cocok untuk</span> nasabah dengan penghasilan di bawah Rp8 juta per bulan dan belum pernah punya rumah.
+                    </p>
+
+                    <h4>🛠️ 3. KPR Renovasi</h4>
+                    <p>
+                        Jenis ini cocok untuk nasabah yang sudah punya rumah, tapi ingin melakukan perbaikan, pelebaran, atau renovasi total.
+                    </p>
+                    <h5>Keunggulannya:</h5>
+                    <ul>
+                        <li class="kpr-dana">Dana renovasi bisa diajukan sesuai kebutuhan dan kondisi bangunan</li>
+                        <li class="kpr-proses">Proses pembiayaan disesuaikan dengan Rencana Anggaran Biaya (RAB) renovasi</li>
+                        <li class="kpr-bebas">Bisa digabung dengan pinjaman lain bila diperlukan</li>
+                    </ul>
+                    <p>
+                        <span style="font-weight: bold; color: #4a4a4a;">📌 Cocok untuk</span> nasabah yang ingin memperbaiki rumah warisan, rumah lama, atau menambah bangunan.
+                    </p>
+                </div>
+    </details>
+  </div>
+</div>
+
+<style>
+/* Anda bisa sedikit menata tampilan agar tidak terlalu mencolok */
+details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none; /* Hilangkan outline fokus default */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Sembunyikan segitiga default di Chrome/Safari */
+}
+
+summary:before {
+  content: "▶ "; /* Tambahkan ikon segitiga kustom */
+}
+
+details[open] summary:before {
+  content: "▼ "; /* Ubah ikon saat terbuka */
+}
+
+/* --- Penambahan ini untuk membuat paragraf rata kanan-kiri --- */
+.product-desc {
+  text-align: justify; /* Ini akan membuat teks rata kanan dan kiri */
+  line-height: 1.6;    /* Opsional: Menambah line-height untuk keterbacaan yang lebih baik */
+  padding: 5px 0;      /* Opsional: Sedikit padding vertikal jika diinginkan */
+}
+</style>
+        <div class="products">
+  <div class="product-card">
+    <div class="product-icon">🏠</div>
+    <div class="product-title">(KPR) Kredit Kepemilikan Rumah </div>
+    <details>
+      <summary>Baca Selengkapnya tentang (KPR) Kredit Kepemilikan Rumah</summary>
+      <div class="product-desc">
+        Bank BRI menawarkan berbagai pilihan produk tabungan yang dirancang
+        untuk memenuhi beragam kebutuhan nasabah, mulai dari individu,
+        anak-anak, hingga pebisnis. BritAma merupakan produk unggulan dengan
+        fasilitas e-banking lengkap, asuransi kecelakaan diri, dan pilihan
+        kartu ATM/Debit Classic atau Gold. Untuk masyarakat umum, Simpedes
+        menjadi pilihan favorit berkat setoran awal dan biaya administrasi
+        yang rendah, didukung jaringan luas dan program undian menarik. Bagi
+        pelaku usaha, BritAma Bisnis menyediakan keleluasaan transaksi lebih
+        tinggi, pencatatan detail, dan suku bunga kompetitif, bahkan gratis
+        biaya administrasi jika memenuhi syarat saldo. Sementara itu,
+        BritAma Valas memungkinkan nasabah menabung dalam 12 mata uang asing
+        dengan nilai tukar bersaing. BRI juga punya Tabungan BRI Junio yang
+        dirancang khusus untuk anak-anak dan remaja dengan desain menarik
+        dan fitur tabungan rencana. Untuk perencanaan ibadah haji, Tabungan
+        Haji BRI hadir tanpa biaya administrasi bulanan dan kemudahan akses.
+        Terakhir, TabunganKu adalah produk yang mendorong budaya menabung
+        dengan setoran awal ringan, bebas biaya administrasi, dan saldo
+        minimum rendah. Setiap produk memiliki detail persyaratan dan
+        ketentuan yang berbeda, oleh karena itu, disarankan untuk selalu
+        memverifikasi informasi terbaru di kantor cabang BRI terdekat atau
+        melalui situs web resmi BRI.
+      </div>
+    </details>
+  </div>
+</div>
+
+<style>
+/* Anda bisa sedikit menata tampilan agar tidak terlalu mencolok */
+details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none; /* Hilangkan outline fokus default */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Sembunyikan segitiga default di Chrome/Safari */
+}
+
+summary:before {
+  content: "▶ "; /* Tambahkan ikon segitiga kustom */
+}
+
+details[open] summary:before {
+  content: "▼ "; /* Ubah ikon saat terbuka */
+}
+
+/* --- Penambahan ini untuk membuat paragraf rata kanan-kiri --- */
+.product-desc {
+  text-align: justify; /* Ini akan membuat teks rata kanan dan kiri */
+  line-height: 1.6;    /* Opsional: Menambah line-height untuk keterbacaan yang lebih baik */
+  padding: 5px 0;      /* Opsional: Sedikit padding vertikal jika diinginkan */
+}
+</style>
+        <div class="products">
+  <div class="product-card">
+    <div class="product-icon">🚜</div>
+    <div class="product-title">Kredit Usaha Rakyat</div>
+    <details>
+      <summary>Baca Selengkapnya tentang Kredit Usaha Rakyat</summary>
+     <div class="product-desc">
+                    <h4>Jenis-Jenis KUR BRI</h4>
+
+                    <p>
+                        <strong>1. KUR Mikro BRI</strong><br>
+                        Pinjaman ringan untuk pelaku usaha kecil, warung, pedagang pasar, petani, nelayan, hingga tukang bakso keliling.
+                    </p>
+                    <ul>
+                        <li class="plafon"><strong>Plafon pinjaman:</strong> Hingga Rp50 juta</li>
+                        <li class="cocok"><strong>Cocok untuk</strong> usaha yang baru mulai atau masih skala mikro</li>
+                        <li class="jaminan"><strong>Tanpa</strong> jaminan tambahan</li>
+                    </ul>
+
+                    <p>
+                        <strong>2. KUR Kecil (KUR Kecil Retail)</strong><br>
+                        Modal besar untuk pelaku usaha yang sudah berkembang dan butuh pembiayaan lebih besar.
+                    </p>
+                    <ul>
+                        <li class="plafon"><strong>Plafon pinjaman:</strong> Rp50 juta – Rp500 juta</li>
+                        <li class="cocok"><strong>Cocok untuk</strong> pengusaha skala menengah yang ingin ekspansi</li>
+                        <li class="agunan"><strong>Memerlukan</strong> agunan sesuai kebijakan bank</li>
+                    </ul>
+
+                    <p>
+                        <strong>3. KUR Super Mikro (program khusus)</strong><br>
+                        Untuk pemula usaha yang bahkan belum punya pengalaman panjang, termasuk pekerja yang terkena PHK atau ibu rumah tangga berwirausaha.
+                    </p>
+                    <ul>
+                        <li class="plafon"><strong>Plafon pinjaman:</strong> Maksimal Rp10 juta</li>
+                        <li class="dorong"><strong>Dirancang untuk</strong> dorong wirausaha baru</li>
+                        <li class="proses"><strong>Tanpa</strong> jaminan, proses sangat mudah</li>
+                    </ul>
+                </div>
+    </details>
+  </div>
+</div>
+
+<style>
+/* Anda bisa sedikit menata tampilan agar tidak terlalu mencolok */
+details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none; /* Hilangkan outline fokus default */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Sembunyikan segitiga default di Chrome/Safari */
+}
+
+summary:before {
+  content: "▶ "; /* Tambahkan ikon segitiga kustom */
+}
+
+details[open] summary:before {
+  content: "▼ "; /* Ubah ikon saat terbuka */
+}
+
+/* --- Penambahan ini untuk membuat paragraf rata kanan-kiri --- */
+.product-desc {
+  text-align: justify; /* Ini akan membuat teks rata kanan dan kiri */
+  line-height: 1.6;    /* Opsional: Menambah line-height untuk keterbacaan yang lebih baik */
+  padding: 5px 0;      /* Opsional: Sedikit padding vertikal jika diinginkan */
+}
+</style>
+        <div class="products">
+  <div class="product-card">
+    <div class="product-icon">📱</div>
+    <div class="product-title">BRI Mobile Banking</div>
+    <details>
+      <summary>Baca Selengkapnya tentang BRI Mobile Banking</summary>
+    <div class="product-desc">
+                    <p>
+                        Bayangkan kamu bisa punya kantor cabang BRI di genggaman tanganmu—itulah BRImo, aplikasi mobile banking terbaru dari BRI yang dirancang serba digital, praktis, dan penuh fitur pintar.
+                    </p>
+
+                    <h4><span style="color: #ffc107;">🌟</span> Apa Itu BRImo?</h4>
+                    <p>
+                        BRImo (BRI Mobile) adalah aplikasi mobile banking berbasis internet dari Bank BRI yang memadukan fitur mobile banking, internet banking, dan uang elektronik dalam satu platform modern. Cocok untuk semua nasabah, baik yang aktif bertransaksi maupun yang ingin lebih hemat waktu dan tenaga.
+                    </p>
+
+                    <h4><span style="color: #17a2b8;">✨</span> Fitur Unggulan BRImo</h4>
+                    <ul class="feature-list">
+                        <li class="transfer"><span>Transfer Instan</span>
+                            <ul>
+                                <li>Antar BRI & antar bank lain secepat kedipan mata</li>
+                                <li>Tersedia juga transfer ke e-wallet seperti OVO, GoPay, DANA, ShopeePay</li>
+                            </ul>
+                        </li>
+                        <li class="saldo"><span>Cek Saldo & Mutasi</span>
+                            <ul>
+                                <li>Lihat riwayat transaksi 12 bulan ke belakang</li>
+                                <li>Info saldo real-time kapan pun</li>
+                            </ul>
+                        </li>
+                        <li class="tarik-tunai"><span>Tarik Tunai Tanpa Kartu</span>
+                            <ul>
+                                <li>Lupa bawa ATM? Tak masalah!</li>
+                                <li>Tarik uang di ATM BRI hanya pakai BRImo dan kode tarik</li>
+                            </ul>
+                        </li>
+                        <li class="bayar-tagihan"><span>Bayar Tagihan & Top Up</span>
+                            <ul>
+                                <li>Listrik, PDAM, BPJS, internet, hingga tagihan kartu kredit</li>
+                                <li>Sekali klik, semua beres</li>
+                            </ul>
+                        </li>
+                        <li class="qris"><span>QRIS & QR Payment</span>
+                            <ul>
+                                <li>Bayar di merchant cukup scan kode QR</li>
+                                <li>Hemat waktu, tanpa kontak fisik</li>
+                            </ul>
+                        </li>
+                        <li class="buka-rekening"><span>Buka Rekening dan Deposito Online</span>
+                            <ul>
+                                <li>Tanpa ke kantor cabang</li>
+                                <li>Cukup selfie dan isi data diri</li>
+                            </ul>
+                        </li>
+                        <li class="keuangan-tambahan"><span>Fitur Keuangan Tambahan</span>
+                            <ul>
+                                <li>Cek pengajuan kredit</li>
+                                <li>Atur limit dan blokir kartu debit/kredit</li>
+                                <li>Simpanan digital & rencana keuangan</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4><span style="color: #343a40;">🔐</span> Keamanan BRImo</h4>
+                    <ul>
+                        <li class="keamanan">Login dengan sidik jari atau Face ID</li>
+                        <li class="keamanan">Transaksi pakai PIN 6 digit</li>
+                        <li class="keamanan">Notifikasi real-time untuk semua aktivitas</li>
+                    </ul>
+                </div>
+    </details>
+  </div>
+</div>
+
+<style>
+/* Anda bisa sedikit menata tampilan agar tidak terlalu mencolok */
+details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none; /* Hilangkan outline fokus default */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Sembunyikan segitiga default di Chrome/Safari */
+}
+
+summary:before {
+  content: "▶ "; /* Tambahkan ikon segitiga kustom */
+}
+
+details[open] summary:before {
+  content: "▼ "; /* Ubah ikon saat terbuka */
+}
+
+/* --- Penambahan ini untuk membuat paragraf rata kanan-kiri --- */
+.product-desc {
+  text-align: justify; /* Ini akan membuat teks rata kanan dan kiri */
+  line-height: 1.6;    /* Opsional: Menambah line-height untuk keterbacaan yang lebih baik */
+  padding: 5px 0;      /* Opsional: Sedikit padding vertikal jika diinginkan */
+}
+</style>
+        <div class="products">
+  <div class="product-card">
+    <div class="product-icon">💰</div>
+    <div class="product-title">Deposito</div>
+    <details>
+      <summary>Baca Selengkapnya tentang Deposito BRI</summary>
+       <div class="product-desc">
+                    <p>
+                        Bank BRI menawarkan berbagai pilihan produk tabungan yang dirancang
+                        untuk memenuhi beragam kebutuhan nasabah, mulai dari individu,
+                        anak-anak, hingga pebisnis antara lain:
+                    </p>
+                    <p>
+                        <strong>BritAma</strong> merupakan produk unggulan dengan fasilitas e-banking lengkap,
+                        asuransi kecelakaan diri, dan pilihan kartu ATM/Debit Classic atau Gold.
+                        Untuk masyarakat umum, <strong>Simpedes</strong> menjadi pilihan favorit berkat
+                        setoran awal dan biaya administrasi yang rendah, didukung jaringan
+                        luas dan program undian menarik. Bagi pelaku usaha, <strong>BritAma Bisnis</strong> menyediakan keleluasaan transaksi
+                        lebih tinggi, pencatatan detail, dan suku bunga kompetitif, bahkan gratis
+                        biaya administrasi jika memenuhi syarat saldo. Sementara itu,
+                        <strong>BritAma Valas</strong> memungkinkan nasabah menabung dalam 12 mata uang asing
+                        dengan nilai tukar bersaing. BRI juga punya <strong>Tabungan BRI Junio</strong> yang dirancang khusus untuk
+                        anak-anak dan remaja dengan desain menarik dan fitur tabungan rencana.
+                        Untuk perencanaan ibadah haji, <strong>Tabungan Haji BRI</strong> hadir tanpa biaya
+                        administrasi bulanan dan kemudahan akses. Terakhir, <strong>TabunganKu</strong> adalah produk yang mendorong budaya menabung
+                        dengan setoran awal ringan, bebas biaya administrasi, dan saldo
+                        minimum rendah. Setiap produk memiliki detail persyaratan dan
+                        ketentuan yang berbeda, oleh karena itu, disarankan untuk selalu
+                        memverifikasi informasi terbaru di kantor cabang BRI terdekat atau
+                        melalui situs web resmi BRI.
+                    </p>
+                </div>
+    </details>
+  </div>
+</div>
+
+<style>
+/* Anda bisa sedikit menata tampilan agar tidak terlalu mencolok */
+details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none; /* Hilangkan outline fokus default */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Sembunyikan segitiga default di Chrome/Safari */
+}
+
+summary:before {
+  content: "▶ "; /* Tambahkan ikon segitiga kustom */
+}
+
+details[open] summary:before {
+  content: "▼ "; /* Ubah ikon saat terbuka */
+}
+
+/* --- Penambahan ini untuk membuat paragraf rata kanan-kiri --- */
+.product-desc {
+  text-align: justify; /* Ini akan membuat teks rata kanan dan kiri */
+  line-height: 1.6;    /* Opsional: Menambah line-height untuk keterbacaan yang lebih baik */
+  padding: 5px 0;      /* Opsional: Sedikit padding vertikal jika diinginkan */
+}
+</style>
+
+        <div class="products">
+  <div class="product-card">
+  <div class="product-icon">💳</div> 
+  <div class="product-title">Kartu Kredit & Debit</div> <details>
+    <summary>Baca Selengkapnya tentang Kartu Kredit & Debit</summary>
+    <div class="product-desc">
+      <p>
+        <h4><span style="color: #007bff;">🏦</span> KARTU DEBIT BRI</h4>
+        Kartu debit BRI adalah kartu yang dikeluarkan oleh BRI dan terhubung langsung dengan rekening tabungan atau giro nasabah. Digunakan untuk bertransaksi seperti tarik tunai, transfer, pembayaran, dan pembelian secara elektronik.
+      </p>
+
+      <h4><span style="color: #28a745;">✅</span> Jenis Kartu Debit BRI</h4>
+      <ul>
+          <li>
+              <strong>BRI BritAma (Classic & Gold)</strong>
+              <ul>
+                  <li>Terhubung dengan rekening BritAma.</li>
+                  <li>Fitur: Tarik tunai, transfer, belanja di merchant, dan online.</li>
+                  <li>Limit transaksi:
+                      <ul>
+                          <li>Tarik tunai: Hingga Rp10 juta/hari.</li>
+                          <li>Transfer: Hingga Rp100 juta/hari (antar BRI).</li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <strong>BRI Simpedes</strong>
+              <ul>
+                  <li>Terhubung dengan rekening Simpedes.</li>
+                  <li>Limit transaksi lebih kecil dari BritAma.</li>
+                  <li>Cocok untuk nasabah perorangan dan UMKM.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>BRI Junio</strong>
+              <ul>
+                  <li>Untuk anak-anak & remaja usia di bawah 17 tahun.</li>
+                  <li>Dilengkapi dengan fitur pengawasan orang tua.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>BRI Private Label / GPN</strong>
+              <ul>
+                  <li>Kartu debit lokal dengan logo GPN (Gerbang Pembayaran Nasional).</li>
+                  <li>Digunakan hanya untuk transaksi domestik.</li>
+                  <li>Biaya transaksi lebih murah dibandingkan dengan kartu berlogo VISA/MasterCard.</li>
+              </ul>
+          </li>
+      </ul>
+
+      <h4><span style="color: #007bff;">💳</span> Fitur Utama Kartu Debit BRI</h4>
+      <ul>
+          <li>Dapat digunakan di mesin ATM BRI, ATM Bersama, dan Prima.</li>
+          <li>Bisa dipakai untuk belanja di EDC dan e-commerce (jika mendukung).</li>
+          <li>Transaksi melalui BRImo dan Internet Banking BRI.</li>
+      </ul>
+
+      <p>
+          <h4><span style="color: #007bff;">💳</span> KARTU KREDIT BRI</h4>
+          Kartu kredit BRI adalah alat pembayaran berbasis utang dari BRI yang memungkinkan nasabah melakukan pembelian dan membayar di kemudian hari (sistem tagihan bulanan).
+      </p>
+
+      <h4><span style="color: #28a745;">✅</span> Jenis Kartu Kredit BRI</h4>
+      <ul>
+          <li>
+              <strong>BRI Easy Card</strong>
+              <ul>
+                  <li>Cocok untuk pemula.</li>
+                  <li>Cashback di restoran, supermarket, dan SPBU.</li>
+                  <li>Limit mulai Rp3 juta.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>BRI Platinum</strong>
+              <ul>
+                  <li>Limit tinggi.</li>
+                  <li>Fasilitas cicilan 0% dan BRI Poin.</li>
+                  <li>Layanan BRI Concierge (khusus pengguna premium).</li>
+              </ul>
+          </li>
+          <li>
+              <strong>BRI Touch / JCB Precious / World Access</strong>
+              <ul>
+                  <li>Dirancang untuk frequent traveler dan nasabah mapan.</li>
+                  <li>Fitur lounge bandara, asuransi perjalanan, dsb.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Co-Branding (Universitas & Instansi)</strong>
+              <ul>
+                  <li>Contoh: BRI-UI Card.</li>
+                  <li>Manfaat tambahan khusus alumni atau pegawai instansi terkait.</li>
+              </ul>
+          </li>
+      </ul>
+
+      <h4><span style="color: #6f42c1;">💸</span> Fitur Kartu Kredit BRI</h4>
+      <ul>
+          <li>Transaksi belanja online dan offline domestik & internasional.</li>
+          <li>Program cicilan 0% hingga 36 bulan.</li>
+          <li>Cashback, poin reward (BRI Poin), diskon merchant.</li>
+          <li>Layanan darurat 24 jam, asuransi perjalanan (untuk kartu tertentu).</li>
+          <li>Bisa tarik tunai (cash advance) dengan bunga.</li>
+      </ul>
+
+      <h4><span style="color: #007bff;">💳</span> Syarat Pengajuan Kartu Kredit BRI</h4>
+      <ul>
+          <li>WNI usia 21–65 tahun (atau 17 tahun jika sudah menikah).</li>
+          <li>Penghasilan minimum bervariasi per jenis kartu.</li>
+          <li>Fotokopi KTP, NPWP, slip gaji atau bukti penghasilan.</li>
+          <li>Mengisi formulir aplikasi & lolos BI checking/SLIK.</li>
+      </ul>
+
+      <p>
+          <h4><span style="color: #dc3545;">🛡️</span> Keamanan</h4>
+          Baik kartu debit maupun kredit BRI sudah menggunakan:
+      </p>
+      <ul>
+          <li>Chip EMV</li>
+          <li>PIN 6 digit</li>
+          <li>SMS notifikasi transaksi</li>
+          <li>BRI Mobile & Internet Banking untuk monitoring dan blokir kartu</li>
+      </ul>
+      <h4><span style="color: #ffc107;">📌</span> Perbedaan Utama</h4>
+<table>
+    <thead>
+        <tr>
+            <th>Fitur</th>
+            <th>Kartu Debit BRI</th>
+            <th>Kartu Kredit BRI</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Sumber dana</td>
+            <td>Saldo tabungan sendiri</td>
+            <td>Dana dari BRI (utang)</td>
+        </tr>
+        <tr>
+            <td>Pembayaran</td>
+            <td>Langsung dipotong saldo</td>
+            <td>Ditagih bulanan</td>
+        </tr>
+        <tr>
+            <td>Fungsi utama</td>
+            <td>Transaksi & tarik tunai</td>
+            <td>Belanja dan cicilan</td>
+        </tr>
+        <tr>
+            <td>Pengajuan</td>
+            <td>Otomatis saat buka rekening</td>
+            <td>Harus ajukan dan disetujui</td>
+        </tr>
+    </tbody>
+</table>
+
+      </div>
+  </details>
+</div>
+    </details>
+  </div>
+</div>
+
+<style>
+/* Anda bisa sedikit menata tampilan agar tidak terlalu mencolok */
+details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none; /* Hilangkan outline fokus default */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Sembunyikan segitiga default di Chrome/Safari */
+}
+
+summary:before {
+  content: "▶ "; /* Tambahkan ikon segitiga kustom */
+}
+
+details[open] summary:before {
+  content: "▼ "; /* Ubah ikon saat terbuka */
+}
+
+/* --- Penambahan ini untuk membuat paragraf rata kanan-kiri --- */
+.product-desc {
+  text-align: justify; /* Ini akan membuat teks rata kanan dan kiri */
+  line-height: 1.6;    /* Opsional: Menambah line-height untuk keterbacaan yang lebih baik */
+  padding: 5px 0;      /* Opsional: Sedikit padding vertikal jika diinginkan */
+}
+</style>
+      </div>
+    </section>
+
+    <section class="content faq" id="faq">
+      <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Bagaimana cara membuka rekening tabungan di BRI melalui 📱 Aplikasi
+          BRImo?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>
+              Unduh aplikasi BRImo dari Google Play Store atau Apple App Store.
+            </li>
+            <li>
+              Buka aplikasi BRImo dan pilih menu
+              <strong>“Belum Punya Rekening BRI”</strong>, lalu klik
+              <strong>“Buka Rekening”</strong>.
+            </li>
+            <li>
+              Pilih jenis tabungan yang diinginkan dan tentukan kantor BRI unit
+              Gombong Barat sebagai pengelola rekening Anda.
+            </li>
+            <li>
+              Unggah foto e-KTP dan isi data diri secara lengkap dan benar.
+            </li>
+            <li>
+              Lakukan verifikasi melalui kode OTP yang dikirim lewat SMS dan
+              tautan email.
+            </li>
+            <li>Rekam wajah sebagai bagian dari verifikasi identitas.</li>
+            <li>
+              Setelah data tervalidasi, lakukan setoran awal ke rekening virtual
+              (BRIVA) yang disediakan.
+            </li>
+            <li>
+              Buat username, password, dan PIN BRImo untuk mengakses layanan
+              perbankan digital.
+            </li>
+            <li>
+              Setelah proses selesai, rekening langsung aktif dan bisa digunakan
+              untuk transaksi melalui BRImo.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Bagaimana cara membuka rekening tabungan di BRI melalui 🏧 mesin
+          digital cs?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>
+              Kunjungi kantor BRI yang memiliki mesin Digital CS, seperti BRI
+              unit Gombong Barat.
+            </li>
+            <li>
+              Pada mesin, pilih menu <strong>“Pembukaan Rekening Baru”</strong>.
+            </li>
+            <li>Pilih jenis tabungan yang Anda inginkan.</li>
+            <li>Tempelkan e-KTP pada alat pembaca yang tersedia.</li>
+            <li>
+              Lakukan verifikasi biometrik: sidik jari dan pengambilan foto
+              wajah.
+            </li>
+            <li>Isi data diri lengkap di layar mesin.</li>
+            <li>Buat tanda tangan digital di layar.</li>
+            <li>
+              Lakukan setoran awal sesuai ketentuan tabungan yang dipilih.
+            </li>
+            <li>
+              Mesin akan mencetak kartu ATM dan struk bukti pembukaan rekening.
+            </li>
+          </ol>
+          <p>
+            Proses ini praktis, tanpa antre panjang, dan bisa dilakukan secara
+            mandiri.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Bagaimana cara aktivasi BRImo setelah buka rekening?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>Buka aplikasi BRImo dan pilih “Aktivasi BRImo”.</li>
+            <li>Masukkan nomor rekening dan data sesuai yang didaftarkan.</li>
+            <li>Masukkan kode OTP yang dikirim via SMS.</li>
+            <li>Buat username dan password BRImo Anda.</li>
+            <li>Setel PIN transaksi untuk menyelesaikan aktivasi.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">Apa itu saldo minimal di tabungan BRI?</div>
+        <div class="faq-answer">
+          Saldo minimal bergantung pada jenis tabungan. Contohnya, Tabungan
+          Simpedes dan BritAma biasanya memiliki saldo minimal Rp50.000 agar
+          rekening tetap aktif dan tidak ditutup otomatis.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Apakah ada biaya admin bulanan di tabungan BRI?
+        </div>
+        <div class="faq-answer">
+          Ya, setiap jenis tabungan BRI memiliki biaya administrasi bulanan yang
+          berbeda. Contohnya, Tabungan BritAma dikenakan biaya sekitar Rp12.000
+          per bulan, sedangkan Simpedes sekitar Rp5.500.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Bagaimana cara setor tunai dan tarik tunai tanpa kartu di BRI?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>Buka aplikasi BRImo dan pilih menu "Setor/Tarik Tunai".</li>
+            <li>Pilih "Tarik Tunai" atau "Setor Tunai".</li>
+            <li>Dapatkan kode transaksi yang berlaku 5 menit.</li>
+            <li>
+              Masukkan kode tersebut di ATM BRI yang mendukung transaksi tanpa
+              kartu.
+            </li>
+            <li>Ikuti petunjuk di mesin ATM untuk menyelesaikan transaksi.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Apa perbedaan jenis tabungan BRI seperti BritAma, Simpedes, dan Junio?
+        </div>
+        <div class="faq-answer">
+          <ul>
+            <li>
+              <strong>BritAma:</strong> Cocok untuk kebutuhan modern dengan
+              fasilitas e-banking dan kartu debit.
+            </li>
+            <li>
+              <strong>Simpedes:</strong> Tabungan dengan setoran awal ringan dan
+              jangkauan luas hingga ke desa.
+            </li>
+            <li>
+              <strong>BRI Junio:</strong> Tabungan khusus anak-anak dengan
+              desain menarik dan edukatif.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Bagaimana jika kartu ATM saya hilang atau tertelan?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>
+              Segera hubungi Call Center BRI di 14017 atau (021) 1500017 untuk
+              melaporkan kehilangan kartu.
+            </li>
+            <li>
+              Datang ke kantor cabang BRI terdekat dengan membawa identitas diri
+              (e-KTP) untuk proses pemblokiran dan penggantian kartu.
+            </li>
+            <li>
+              Jika kamu sudah terdaftar BRImo, kamu juga bisa blokir kartu
+              melalui aplikasi untuk mencegah penyalahgunaan.
+            </li>
+            <li>
+              Setelah pemblokiran, ajukan pembuatan kartu ATM pengganti di
+              cabang.
+            </li>
+            <li>
+              Tunggu proses pembuatan kartu baru, biasanya beberapa hari kerja.
+            </li>
+            <li>
+              Ambil kartu baru di kantor cabang dan aktifkan sesuai prosedur.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Apa saja jenis kredit yang tersedia di BRI?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>
+              <strong>💼KUR (Kredit Usaha Rakyat):</strong> Untuk pelaku UMKM.
+              Keunggulan: bunga rendah, tanpa agunan tambahan, proses cepat.
+            </li>
+            <li>
+              <strong>🏡Kupedes (Kredit Umum Pedesaan):</strong> Untuk usaha
+              atau konsumsi. Keunggulan: syarat mudah, angsuran fleksibel.
+            </li>
+            <li>
+              <strong>🧑KUPRA (Kredit Pegawai):</strong> Untuk pegawai tetap.
+              Keunggulan: cicilan potong gaji, proses cepat, tenor panjang.
+            </li>
+            <li>
+              <strong>🏠KPR (Kredit Pemilikan Rumah):</strong> Untuk
+              beli/renovasi rumah. Keunggulan: tenor panjang, bunga bersaing.
+            </li>
+            <li>
+              <strong>🏍️KKB (Kredit Kendaraan Bermotor):</strong> Untuk
+              pembelian motor/mobil. Keunggulan: DP ringan, proses cepat.
+            </li>
+            <li>
+              <strong>👥Briguna:</strong> Untuk pegawai dan pensiunan.
+              Keunggulan: tanpa agunan, bisa untuk berbagai kebutuhan.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Syarat apa saja untuk mengajukan pinjaman 💼KUR (Kredit Usaha Rakyat)
+          di BRI?
+        </div>
+        <div class="faq-answer">
+          <h3>✅ Syarat Umum Pengajuan KUR di BRI Unit Gombong Barat</h3>
+          <ol>
+            <li>
+              <strong>Warga Negara Indonesia (WNI)</strong>, berusia minimal 21
+              tahun atau sudah menikah.
+            </li>
+            <li>
+              <strong>Memiliki usaha produktif dan layak</strong> yang telah
+              berjalan minimal 6 bulan dan berdomisili di wilayah kerja BRI Unit
+              Gombong Barat.
+            </li>
+            <li>
+              <strong>Tidak sedang menerima kredit produktif</strong> dari bank
+              lain (kecuali kredit konsumtif seperti KPR atau KKB).
+            </li>
+            <li>
+              <strong>Dokumen yang diperlukan:</strong>
+              <ul>
+                <li>e-KTP dan Kartu Keluarga (KK)</li>
+                <li>
+                  Nomor Induk Berusaha (NIB) atau Surat Keterangan Usaha dari
+                  kelurahan/RT-RW di wilayah Gombong
+                </li>
+                <li>NPWP (untuk pengajuan di atas Rp50 juta)</li>
+                <li>Pas foto 4x6 terbaru</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3>📌 Jenis KUR yang Tersedia di BRI Unit Gombong Barat</h3>
+          <ul>
+            <li>
+              <strong>KUR Mikro:</strong> Maksimal Rp50 juta. Tanpa agunan
+              tambahan, bunga 6% per tahun. Tenor: 3–5 tahun.
+            </li>
+            <li>
+              <strong>KUR Kecil:</strong> Rp50 juta – Rp500 juta. Butuh agunan.
+              Tenor hingga 5 tahun.
+            </li>
+            <li>
+              <strong>KUR TKI:</strong> Maksimal Rp25 juta untuk calon TKI,
+              tenor menyesuaikan masa kontrak.
+            </li>
+          </ul>
+
+          <h3>📝 Cara Pengajuan KUR di BRI Unit Gombong Barat</h3>
+          <ol>
+            <li>
+              <strong>Langsung ke Kantor:</strong> Datang ke BRI Unit Gombong
+              Barat, bawa dokumen lengkap, isi formulir, dan ikuti proses
+              wawancara oleh petugas.
+            </li>
+            <li>
+              <strong>Online:</strong> Jika ingin lebih praktis, akses
+              <a href="https://kur.bri.co.id" target="_blank"
+                >https://kur.bri.co.id</a
+              >
+              dan pilih BRI Unit Gombong Barat sebagai lokasi pengelola
+              rekening.
+            </li>
+          </ol>
+
+          <h3>💡 Tips Lolos Pengajuan KUR</h3>
+          <ul>
+            <li>Dokumen lengkap dan jelas</li>
+            <li>Usaha aktif dan terpantau</li>
+            <li>Legalitas usaha sesuai wilayah Gombong</li>
+            <li>Rekam jejak kredit baik</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">
+          Bagaimana cara mengakses layanan mobile banking?
+        </div>
+        <div class="faq-answer">
+          <ol>
+            <li>
+              Unduh aplikasi BRImo dari Google Play Store atau Apple App Store.
+            </li>
+            <li>Install dan buka aplikasi BRImo di smartphone Anda.</li>
+            <li>
+              Login menggunakan username dan password yang sudah terdaftar.
+            </li>
+            <li>Masukkan PIN BRImo untuk keamanan tambahan.</li>
+            <li>
+              Setelah berhasil masuk, Anda bisa mengakses berbagai layanan
+              perbankan seperti cek saldo, transfer, pembayaran, dan lainnya.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="contact">
+      <h2 class="section-title">Kontak & Lokasi</h2>
+      <p>
+        <strong>Alamat:</strong> Jl. Yos Sudarso No.379, RT.02/RW.05, Wonokriyo,
+        Kec. Gombong, Kabupaten Kebumen, Jawa Tengah 54416
+      </p>
+      <p><strong>Telepon:</strong> 1500 017</p>
+      <p>
+        <strong>WhatsApp Sabrina:</strong>
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          rel="noopener noreferrer"
+          >+62 812-3456-7890</a
+        >
+      </p>
+      <p>
+        <strong>Instagram:</strong>
+        <a
+          href="https://instagram.com/briunitgombong"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@briunitgombong</a
+        >
+      </p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.350691182358!2d109.5077977!3d-7.6085443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e654b98cb0170e9%3A0xe9721267c8a732d3!2sBRI%20Unit%20Gombong!5e0!3m2!1sid!2sid!4v1685328495812!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <footer>&copy; 2025 SIPANDAI BRI Unit Gombong | All Rights Reserved</footer>
+
+    <script>
+      // Simple FAQ toggle script already handled inline by onclick toggle class 'active'
+    </script>
+  </body>
+</html>
